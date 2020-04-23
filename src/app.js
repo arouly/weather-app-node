@@ -5,7 +5,9 @@ const express = require('express');
 
 const forecast = require('./utils/forcast');
 const geocode = require('./utils/geocode');
+
 const app = express();
+const port = process.env.PORT || 3000;
 
 const viewsPath = './templates/views';
 const partialsPath = './templates/partials';
@@ -101,4 +103,4 @@ app.get('*', (req, res) => {
     })
 });
 
-app.listen(3000, () => console.log('Server listning on port 3000.'));
+app.listen(port, () => console.log('Server listning on port ' + port));
