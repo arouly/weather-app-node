@@ -28,7 +28,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        textMessage: 'I love my babe Amale Kbida <3',
+        textMessage: 'New Text',
         name: 'Ayman'
     });
 });
